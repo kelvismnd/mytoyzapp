@@ -1,0 +1,54 @@
+<ion-content class="container_tela_inicial" padding>
+  <div class="container_logo">
+    <img src="../../assets/logo1.png" alt="" />
+  </div>
+
+  <form [formGroup]="authForm" (submit)="onSubmit()">
+    <ng-container *ngIf="!configs.isSignIn">
+      <ion-item>
+        <ion-icon name="person" color="primary" slot="start"></ion-icon>
+        <ion-input
+          type="text"
+          placeholder="nome"
+          formControlName="name"
+          autofocus="tre"
+        ></ion-input>
+      </ion-item>
+    </ng-container>
+
+    <ion-item>
+      <ion-icon name="mail" color="primary" slot="start"></ion-icon>
+      <ion-input
+        type="password"
+        placeholder="Email"
+        inputmode="email"
+        formControlName="email"
+        autofocus="tre"
+      ></ion-input>
+    </ion-item>
+    <ion-item>
+      <ion-icon name="lock" color="primary" slot="start"></ion-icon>
+      <ion-input type="password" placeholder="senha" formControlName="password"></ion-input>
+    </ion-item>
+
+    <ion-button
+      [disabled]="authForm.invalid"
+      shape="round"
+      class="btn_entrar"
+      color="primary"
+      size="large"
+      expand="full"
+      type="submit"
+      >{{ configs.action }}</ion-button
+    >
+  </form>
+</ion-content>
+
+<ion-footer>
+  <ion-toolbar>
+    <ion-button expand="full" fill="clear" class="btn_cadastrar" (click)="changeAuthAction()"
+      >{{ configs.actionChangeComplemento }}
+      <span class="span_cadastrar">{{configs.actionChange}}</span></ion-button
+    >
+  </ion-toolbar>
+</ion-footer>
