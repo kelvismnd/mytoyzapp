@@ -1,4 +1,4 @@
-export enum AuthProvder {
+export enum AuthProvider {
   Email,
   Facebook
 }
@@ -11,6 +11,6 @@ export interface User {
 
 export interface AuthOptions {
   isSignIn: boolean;
-  provider: AuthProvder;
+  provider: AuthProvider;
   user: User;
 }
