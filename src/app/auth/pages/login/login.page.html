@@ -3,7 +3,7 @@
     <img src="../../assets/logo1.png" alt="" />
   </div>
 
-  <form [formGroup]="authForm" (submit)="onSubmit()">
+  <form [formGroup]="authForm" (submit)="onSubmit(authProviders.Email)">
     <ng-container *ngIf="!configs.isSignIn">
       <ion-item>
         <ion-icon name="person" color="primary" slot="start"></ion-icon>
@@ -32,9 +32,8 @@
     </ion-item>
 
     <ion-button
-      [disabled]="authForm.invalid"
-      shape="round"
       class="btn_entrar"
+      [disabled]="authForm.invalid"
       color="primary"
       size="large"
       expand="full"
