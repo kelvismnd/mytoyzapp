@@ -1,0 +1,102 @@
+<ion-header>
+  <ion-toolbar>
+    <img slot="start" class="img_logo" src="../../../../assets/logo1.png" alt="" />
+    <ion-title class="padding">MyToyz</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content padding>
+  <h2>Mais vendidos</h2>
+
+  <div class="container_mais_vendidos">
+    <div class="box">
+      <img
+        class="img_mais_vendidos"
+        src="../../../../assets/actionfigure/mulhermaravilha.jpg"
+        alt=""
+      />
+      <ion-button color="success" expand="block" size="small" class="btn_mais_vendidos"
+        >R$ 45.99</ion-button
+      >
+      <ion-button color="primary" expand="block" class="btn_mais_vendidos" (click)="comprar()"
+        >comprar</ion-button
+      >
+    </div>
+
+    <div class="box">
+      <img class="img_mais_vendidos" src="../../../../assets/actionfigure/tanjiro.jpg" alt="" />
+      <ion-button color="success" expand="block" size="small" class="btn_mais_vendidos"
+        >R$ 45.99</ion-button
+      >
+      <ion-button color="primary" expand="block" class="btn_mais_vendidos">comprar</ion-button>
+    </div>
+
+    <div class="box">
+      <img class="img_mais_vendidos" src="../../../../assets/actionfigure/goku.jpg" alt="" />
+      <ion-button color="success" expand="block" size="small" class="btn_mais_vendidos"
+        >R$ 45.99</ion-button
+      >
+      <ion-button color="primary" expand="block" class="btn_mais_vendidos">comprar</ion-button>
+    </div>
+  </div>
+
+  <h2>Todos os produtos</h2>
+
+  <div class="todos_produtos">
+    <ion-item>
+      <ion-thumbnail slot="start">
+        <img class="img_mais_vendidos" src="../../../../assets/actionfigure/tanjiro.jpg" />
+      </ion-thumbnail>
+      <ion-label>
+        <span>Tanjiro</span>
+        <p>Kamado TanjirouKamado</p>
+        <p style="color:#3880ff">R$ 60.00</p>
+      </ion-label>
+      <div class="container_buttons">
+        <ion-button color="primary">Comprar</ion-button>
+      </div>
+    </ion-item>
+
+    <ion-item>
+      <ion-thumbnail slot="start">
+        <img class="img_mais_vendidos" src="../../../../assets/actionfigure/goku.jpg" />
+      </ion-thumbnail>
+      <ion-label>
+        <span>Goku Black</span>
+        <p>Son GokuSon Goku</p>
+        <p style="color:#3880ff">R$ 100.00</p>
+      </ion-label>
+      <div class="container_buttons">
+        <ion-button color="primary">Comprar</ion-button>
+      </div>
+    </ion-item>
+
+    <ion-item>
+      <ion-thumbnail slot="start">
+        <img class="img_mais_vendidos" src="../../../../assets/actionfigure/goku.jpg" />
+      </ion-thumbnail>
+      <ion-label>
+        <span>Goku Black</span>
+        <p>Son GokuSon Goku</p>
+        <p style="color:#3880ff">R$ 100.00</p>
+      </ion-label>
+      <div class="container_buttons">
+        <ion-button color="primary">Comprar</ion-button>
+      </div>
+    </ion-item>
+
+    <ion-item>
+      <ion-thumbnail slot="start">
+        <img class="img_mais_vendidos" src="../../../../assets/actionfigure/mulhermaravilha.jpg" />
+      </ion-thumbnail>
+      <ion-label>
+        <span>Mulher Maravilha</span>
+        <p>Justice League</p>
+        <p style="color:#3880ff">R$ 100.00</p>
+      </ion-label>
+      <div class="container_buttons">
+        <ion-button color="primary">Comprar</ion-button>
+      </div>
+    </ion-item>
+  </div>
+</ion-content>

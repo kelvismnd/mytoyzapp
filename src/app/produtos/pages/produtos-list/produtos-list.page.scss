@@ -1,0 +1,37 @@
+.img_logo {
+  width: 23%;
+}
+.padding {
+  display: table;
+  margin-left: 50px;
+}
+
+//area mais vendidos
+
+.container_mais_vendidos {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.container_mais_vendidos .box {
+  height: 60px;
+  width: 70px;
+  display: table;
+  background: #fff;
+}
+
+button.btn_mais_vendidos {
+}
+
+.img_mais_vendidos {
+  border: 1px solid #ccc;
+}
+
+//todos os produtos
+
+.container_buttons {
+  display: flex;
+  flex-direction: column;
+  width: 40%;
+}
