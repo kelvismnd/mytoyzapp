@@ -9,3 +9,4 @@ Aplicativo feito para aula de mobile <br>
 
 a ideia era mais ou menos essa :<br>
 
+![diagrama](https://user-images.githubusercontent.com/16437028/70147659-7d7b9780-1683-11ea-9842-91c9174376f8.jpg)
