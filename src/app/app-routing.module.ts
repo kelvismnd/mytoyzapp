@@ -1,3 +1,4 @@
+import { CarrinhoPageModule } from './produtos/pages/carrinho/carrinho.module';
 import { NgModule } from '@angular/core';
 import { PreloadAllModules, RouterModule, Routes } from '@angular/router';
 import { AuthGuard } from './core/guards/auth.guard';
@@ -12,8 +13,7 @@ const routes: Routes = [
   },
   {
     path: 'carrinho',
-    loadChildren: './produtos/produtos.module#ProdutosModule',
-    canLoad: [AuthGuard]
+    loadChildren: './produtos/pages/carrinho/carrinho.module#CarrinhoPageModule'
   }
 ];
 

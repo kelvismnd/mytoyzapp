@@ -12,10 +12,6 @@ const routes: Routes = [
         loadChildren: './pages/produtos-list/produtos-list.module#ProdutosListPageModule'
       }
     ]
-  },
-  {
-    path: '/carrinho',
-    loadChildren: './pages/carrinho/carrinho.module#CarrinhoPageModule'
   }
 ];
 

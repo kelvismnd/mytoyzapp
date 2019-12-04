@@ -4,6 +4,69 @@
   </ion-toolbar>
 </ion-header>
 
-<ion-content>
+<ion-content padding>
+  <ion-item>
+    <ion-thumbnail slot="start">
+      <img class="img_mais_vendidos" src="../../../../assets/actionfigure/tanjiro.jpg" />
+    </ion-thumbnail>
+    <ion-label>
+      <span>Tanjiro</span>
+      <p>Kamado TanjirouKamado</p>
+      <p style="color:#3880ff">R$ 60.00</p>
+    </ion-label>
+    <div class="container_buttons">
+      <ion-button color="danger">remover</ion-button>
+    </div>
+  </ion-item>
+  <ion-item>
+    <ion-thumbnail slot="start">
+      <img class="img_mais_vendidos" src="../../../../assets/actionfigure/mulhermaravilha.jpg" />
+    </ion-thumbnail>
+    <ion-label>
+      <span>Mulher Maravilha</span>
+      <p>Justice</p>
+      <p style="color:#3880ff">R$ 60.00</p>
+    </ion-label>
+    <div class="container_buttons">
+      <ion-button color="danger">remover</ion-button>
+    </div>
+  </ion-item>
 
+  <ion-item>
+    <ion-thumbnail slot="start">
+      <img class="img_mais_vendidos" src="../../../../assets/actionfigure/goku.jpg" />
+    </ion-thumbnail>
+    <ion-label>
+      <span>Goku</span>
+      <p>Dbz</p>
+      <p style="color:#3880ff">R$ 60.00</p>
+    </ion-label>
+    <div class="container_buttons">
+      <ion-button color="danger">remover</ion-button>
+    </div>
+  </ion-item>
+
+  <div class="container_valor" padding>
+    <div class="container seila"></div>
+    <div class="container">
+      <h2>Valor total</h2>
+      <h3>R$ 180,00</h3>
+      <p>ou 3x de R$ 60,00</p>
+    </div>
+  </div>
+
+  <ion-button color="success" shape="round" expand="full" size="default" (click)="voltar()">
+    finalizar compra
+  </ion-button>
+
+  <ion-button
+    color="success"
+    shape="round"
+    fill="outline"
+    expand="full"
+    size="default"
+    (click)="voltar()"
+  >
+    continuar comprando
+  </ion-button>
 </ion-content>

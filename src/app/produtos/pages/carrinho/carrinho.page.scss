@@ -1,0 +1,17 @@
+.container_valor {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+}
+
+.seila {
+  border: 1px solid #ccc;
+  width: 30%;
+  height: 120px;
+}
