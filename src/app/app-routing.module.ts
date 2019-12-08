@@ -13,8 +13,10 @@ const routes: Routes = [
   },
   {
     path: 'carrinho',
-    loadChildren: './produtos/pages/carrinho/carrinho.module#CarrinhoPageModule'
+    loadChildren: './produtos/pages/carrinho/carrinho.module#CarrinhoPageModule',
+    canLoad: [AuthGuard]
   }
+  
 ];
 
 @NgModule({

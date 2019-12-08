@@ -1,12 +1,21 @@
 <ion-header>
   <ion-toolbar>
-    <img slot="start" class="img_logo" src="../../../../assets/logo1.png" alt="" />
-    <ion-title class="padding">MyToyz</ion-title>
+    <ion-buttons slot="end">
+      <ion-button color="primary" (click)="logout()">sair</ion-button>
+    </ion-buttons>
+
+    <ion-title> MyToyz</ion-title>
+  </ion-toolbar>
+
+  <ion-toolbar>
+    <ion-title>
+      Loja = Sobre = Contato
+    </ion-title>
   </ion-toolbar>
 </ion-header>
 
 <ion-content padding>
-  <h2>Mais vendidos</h2>
+  <!-- <h2>Mais vendidos</h2>
 
   <div class="container_mais_vendidos">
     <div class="box">
@@ -102,5 +111,5 @@
         <ion-button color="primary" (click)="comprar()">Comprar</ion-button>
       </div>
     </ion-item>
-  </div>
+  </div> -->
 </ion-content>
